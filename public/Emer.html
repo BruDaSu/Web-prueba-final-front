@@ -93,7 +93,7 @@
         const formData = new FormData(form);
         const data = Object.fromEntries(formData.entries());
 
-        const response = await fetch('/submit', {
+        const response = await fetch('https://web-prueba-final-backent-production.up.railway.app/submit', {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(data)
